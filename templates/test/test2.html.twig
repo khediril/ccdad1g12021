@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+ {% block body %}
+ <h1>TEST2</h1>
+  Nom : {{ nom }}<br>
+  Prenom : {{ prenom }}<br>
+<ul>
+  {% for note in notes %}
+    <li>  {{ note }} </li>
+  {% endfor %}
+  </ul>
+  <a href="{{ path('test1') }}"> aller à la page test1 </a>
+ 
+ {% endblock %}
