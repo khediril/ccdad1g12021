@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout produit{% endblock %}
+
+{% block body %}
+<h1>Ajout produit</h1>
+
+Produit ajouté avec succés : id : {{ produit.id }}
+{{ dump(produit)}}
+{% endblock %}

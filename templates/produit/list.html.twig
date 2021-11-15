@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout produit{% endblock %}
+
+{% block body %}
+<h1>Liste des Produits</h1>
+<ul>
+{% for p in produits %}
+<li> {{p.id ~ ':' ~ p.nom ~ ':' ~ p.categorie.nom}} </li>
+    
+{% endfor %}
+</ul>
+
+{% endblock %}
